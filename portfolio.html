@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Economic Indicator - COVID-19 Impact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,64 +14,57 @@
         }
 
         header {
-            background-color: #282c34;
-            padding: 20px;
             text-align: center;
+            padding: 40px;
+            background-color: #282c34;
             color: white;
         }
 
-        header h1 {
-            margin: 0;
-        }
-
-        .content {
-            padding: 40px;
+        section {
+            padding: 20px;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .projects {
-            list-style: none;
-            padding: 0;
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            color: #333;
         }
 
-        .projects li {
-            margin-bottom: 20px;
+        h2 {
+            font-size: 28px;
+            color: #555;
         }
 
-        .projects a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+        p {
+            line-height: 1.6;
         }
 
-        .projects a:hover {
-            text-decoration: underline;
-        }
-
-        .projects p {
-            margin: 5px 0;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
         }
 
         footer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
             background-color: #282c34;
             color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        footer nav a {
+        nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
-            font-weight: bold;
         }
 
-        footer nav a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
     </style>
@@ -79,30 +72,41 @@
 <body>
 
     <header>
-        <h1>Projects</h1>
+        <h1>Economic Indicator - COVID-19 Impact</h1>
     </header>
 
-    <div class="content">
-        <h2>My GitHub Projects</h2>
-        <ul class="projects">
-            <li>
-                <a href="https://github.com/kenwanyama/Economic-Indicator" target="_blank">Economic Dashboard</a>
-                <p>This project analyzes economic data from the Federal Reserve Economic Data (FRED) API, focusing on the S&P 500 stock index and unemployment rates across U.S. states.</p>
-            </li>
-            <li>
-                <a href="https://github.com/kenwanyama/Apple-store-EDA" target="_blank">Apple Store EDA</a>
-                <p>Bringing together data from different App Store description tables into a single, unified dataset, this project forms the foundation for uncovering valuable insights within the Apple App Store.</p>
-            </li>
-            <li>
-                <a href="https://github.com/kenwanyama/COVID-Vaccine-Tracker" target="_blank">COVID Vaccine Tracker</a>
-                <p>This project focuses on visualizing global vaccination progress, tracking vaccination efforts worldwide, and providing an overview of key vaccine-related metrics such as doses administered, population percentages vaccinated, and daily vaccination rates.</p>
-            </li>
-            <li>
-                <a href="https://github.com/kenwanyama/Healthcare-dashboard" target="_blank">Healthcare Dashboard</a>
-                <p>This project provides a clear view of flu shot administration in 2022 using synthetic healthcare data, helping to understand the public health impact of flu vaccinations.</p>
-            </li>
+    <section>
+        <h2>Introduction</h2>
+        <p>Here we explore how the COVID-19 pandemic affected the U.S. economy, with a focus on stock market performance (S&P 500 stock index), unemployment rates, and labor participation. By looking at key data from 2020, we can see how the pandemic shook financial markets, disrupted jobs, and how the economy started its recovery.</p>
+        
+        <h2>S&P 500 Stock Index</h2>
+        <p>The S&P 500 saw a steady rise until May 2020, when it dropped drastically due to the pandemic. However, the index began to recover rapidly, even surpassing its previous levels as investors regained confidence, fueled by economic stimulus measures and the gradual reopening of businesses.</p>
+        
+        <!-- Placeholder for S&P 500 chart -->
+        <img src="path-to-your-s-and-p-chart.png" alt="S&P 500 Chart">
+        
+        <h2>Unemployment Rates</h2>
+        <p>Unemployment rates varied significantly by state, with certain states experiencing more severe impacts due to their economic structures. Nevada had the highest unemployment rate in May 2020, followed by Hawaii, Michigan, New York, and California. These states were heavily reliant on industries such as tourism, hospitality, and manufacturing, which were among the hardest hit by the pandemic-induced shutdowns.</p>
+        
+        <!-- Placeholder for Unemployment rates chart -->
+        <img src="path-to-your-unemployment-chart.png" alt="Unemployment Rates Chart">
+        
+        <h2>Labor Participation and Unemployment</h2>
+        <p>The unemployment and participation chart highlights a clear drop in labor participation in April 2020, coinciding with the peak of pandemic-related shutdowns. During this period, many workers left the labor force entirely, either due to layoffs or because they were not seeking employment under the current economic conditions.</p>
+        
+        <!-- Placeholder for Unemployment and Participation chart -->
+        <img src="path-to-your-unemployment-participation-chart.png" alt="Unemployment and Participation Chart">
+
+        <h2>Key Trends in 2020</h2>
+        <p>The labor market dynamics during 2020 were complex, characterized by a sharp decline in labor force participation in April 2020, followed by a gradual recovery. The relationship between unemployment and participation shows an interesting trend:</p>
+        <ul>
+            <li><strong>April 2020:</strong> Labor force participation dropped sharply due to pandemic-related shutdowns. Simultaneously, unemployment rates surged.</li>
+            <li><strong>May to July 2020:</strong> As the economy began to reopen, labor force participation rose rapidly, reflecting the return of many workers to the job market. During this period, unemployment rates began to decrease.</li>
+            <li><strong>August 2020:</strong> By August, the trends in unemployment and participation rates converged, where rising participation rates crossed over the falling unemployment rates.</li>
         </ul>
-    </div>
+
+        <p><strong>Implication:</strong> This crossover indicates a critical turning point in the economic recovery, as more people re-entered the workforce and unemployment rates started to stabilize. However, the rate of recovery slowed after July, indicating that some sectors and regions were still struggling to return to pre-pandemic employment levels.</p>
+    </section>
 
     <footer>
         <nav>
