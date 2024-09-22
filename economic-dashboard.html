@@ -20,6 +20,12 @@
             color: white;
         }
 
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            color: white; /* Changed title to white */
+        }
+
         section {
             padding: 20px;
             max-width: 800px;
@@ -27,17 +33,6 @@
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 32px;
-            color: #333;
-        }
-
-        h2 {
-            font-size: 28px;
-            color: #555;
         }
 
         p {
@@ -48,6 +43,23 @@
             max-width: 100%;
             height: auto;
             margin: 20px 0;
+            position: relative;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px;
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        figure:hover figcaption {
+            display: block;
         }
 
         footer {
@@ -76,36 +88,35 @@
     </header>
 
     <section>
-        <h2>Introduction</h2>
-        <p>Here we explore how the COVID-19 pandemic affected the U.S. economy, with a focus on stock market performance (S&P 500 stock index), unemployment rates, and labor participation. By looking at key data from 2020, we can see how the pandemic shook financial markets, disrupted jobs, and how the economy started its recovery.</p>
+        <p>
+            The COVID-19 pandemic brought sudden disruptions to nearly every aspect of life, particularly the global economy. From stock market fluctuations to job losses, the crisis was deeply felt by households, businesses, and financial institutions. We’ll dive into these key indicators, showing how economic resilience began to unfold through data—this is more than just numbers; it's the story of recovery.
+        </p>
         
-        <h2>S&P 500 Stock Index</h2>
-        <p>The S&P 500 saw a steady rise until May 2020, when it dropped drastically due to the pandemic. However, the index began to recover rapidly, even surpassing its previous levels as investors regained confidence, fueled by economic stimulus measures and the gradual reopening of businesses.</p>
-        
-        <!-- Placeholder for S&P 500 chart -->
-        <img src="path-to-your-s-and-p-chart.png" alt="S&P 500 Chart">
-        
-        <h2>Unemployment Rates</h2>
-        <p>Unemployment rates varied significantly by state, with certain states experiencing more severe impacts due to their economic structures. Nevada had the highest unemployment rate in May 2020, followed by Hawaii, Michigan, New York, and California. These states were heavily reliant on industries such as tourism, hospitality, and manufacturing, which were among the hardest hit by the pandemic-induced shutdowns.</p>
-        
-        <!-- Placeholder for Unemployment rates chart -->
-        <img src="path-to-your-unemployment-chart.png" alt="Unemployment Rates Chart">
-        
-        <h2>Labor Participation and Unemployment</h2>
-        <p>The unemployment and participation chart highlights a clear drop in labor participation in April 2020, coinciding with the peak of pandemic-related shutdowns. During this period, many workers left the labor force entirely, either due to layoffs or because they were not seeking employment under the current economic conditions.</p>
-        
-        <!-- Placeholder for Unemployment and Participation chart -->
-        <img src="path-to-your-unemployment-participation-chart.png" alt="Unemployment and Participation Chart">
+        <!-- Chart with disappearing caption for S&P 500 -->
+        <figure>
+            <img src="images/s-and-p-chart.png" alt="S&P 500 Chart">
+            <figcaption>The S&P 500 in 2020 - A rollercoaster of investor confidence.</figcaption>
+        </figure>
+        <p>
+            The chart above tracks the S&P 500 performance throughout 2020. Initially, the index followed a rising trend, driven by economic growth before the pandemic. However, as COVID-19 spread, the markets plummeted in May, signaling a loss of investor confidence. The recovery afterward, fueled by government stimulus and optimism over reopening, was one of the fastest in market history, demonstrating the stock market’s resilience, even as the broader economy lagged behind. According to research by Goldman Sachs, stock markets tend to recover quicker than the labor market and real economy during crises </p>
 
-        <h2>Key Trends in 2020</h2>
-        <p>The labor market dynamics during 2020 were complex, characterized by a sharp decline in labor force participation in April 2020, followed by a gradual recovery. The relationship between unemployment and participation shows an interesting trend:</p>
-        <ul>
-            <li><strong>April 2020:</strong> Labor force participation dropped sharply due to pandemic-related shutdowns. Simultaneously, unemployment rates surged.</li>
-            <li><strong>May to July 2020:</strong> As the economy began to reopen, labor force participation rose rapidly, reflecting the return of many workers to the job market. During this period, unemployment rates began to decrease.</li>
-            <li><strong>August 2020:</strong> By August, the trends in unemployment and participation rates converged, where rising participation rates crossed over the falling unemployment rates.</li>
-        </ul>
+        <!-- Chart with disappearing caption for Unemployment Rates -->
+        <figure>
+            <img src="images/unemployment-chart.png" alt="Unemployment Rates Chart">
+            <figcaption>Unemployment in states heavily reliant on tourism and services.</figcaption>
+        </figure>
+        <p>
+            This chart highlights the unemployment rates by state during May 2020. Nevada, with its reliance on tourism, was hit hardest, followed by Hawaii, Michigan, New York, and California. Industries dependent on human interaction, such as hospitality and leisure, saw the most significant job losses. According to the Bureau of Labor Statistics, unemployment surged to historic levels, with some sectors like hospitality losing over 50% of their workforce .
+            <!-- Chart with disappearing caption for Labor Participation and Unemployment -->
+        <figure>
+            <img src="images/unemployment-participation-chart.png" alt="Unemployment and Participation Chart">
+            <figcaption>The crossover of participation and unemployment rates.</figcaption>
+        </figure>
+        <p>
+            The final chart presents labor force participation and unemployment trends during 2020. Labor force participation dropped sharply in April 2020, as millions of workers either lost their jobs or left the workforce. By August, unemployment started to fall as participation rebounded—this crossover marked the early stages of recovery. According to a report by McKinsey & Company, labor market disruptions were concentrated in low-wage sectors, whereas higher-wage jobs recovered more swiftly .
+        </p>
 
-        <p><strong>Implication:</strong> This crossover indicates a critical turning point in the economic recovery, as more people re-entered the workforce and unemployment rates started to stabilize. However, the rate of recovery slowed after July, indicating that some sectors and regions were still struggling to return to pre-pandemic employment levels.</p>
+ <strong>Key Takeaway:</strong> These charts reveal how different sectors and states experienced the economic shock differently and at different rates, with some rebounding faster than others.</p>
     </section>
 
     <footer>
