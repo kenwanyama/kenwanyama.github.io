@@ -3,98 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kennedy Wanyama's Economic Dashboard</title>
+    <title>Economic Indicator - COVID-19 Impact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #282c34;
+            color: white;
         }
 
         h1 {
+            margin-top: 0;
+            font-size: 32px;
             color: white;
-            text-align: center;
-            margin: 20px 0;
-            background-color: #4A4A8A;
-            padding: 20px;
         }
 
         section {
-            margin: 20px;
             padding: 20px;
-            background-color: #fff;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        img {
-            width: 710px;
-            height: 300px;
-            display: block;
-            margin: 0 auto 10px auto;
-        }
-
-        .caption {
-            text-align: center;
-            font-size: 0.9em;
-            color: grey;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .caption:hover {
-            opacity: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         p {
-            font-size: 1.1em;
             line-height: 1.6;
         }
 
-        .source {
-            font-size: 0.9em;
-            color: grey;
-            margin-top: 10px;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        figure {
+            width: 100%; /* Make figures responsive */
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px;
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        figure:hover figcaption {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #282c34;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .long-chart {
+            width: 120%; /* Increase width for unemployment chart */
         }
     </style>
 </head>
 <body>
-    <h1>Economic Data Analysis</h1>
+
+    <header>
+        <h1>Economic Indicator - COVID-19 Impact</h1>
+    </header>
 
     <section>
         <p>
-            The COVID-19 pandemic brought sudden disruptions to nearly every aspect of life, particularly the global economy. From stock market fluctuations to job losses, the crisis was deeply felt by households, businesses, and financial institutions. We’ll dive into these key indicators, showing how economic resilience began to unfold through data—this is more than just numbers; it's the story of recovery.
+            The COVID-19 pandemic brought sudden disruptions to nearly every aspect of life, particularly the global economy. From stock market fluctuations to unprecedented job losses, the crisis was deeply felt by households, businesses, and financial institutions alike. With governments imposing lockdowns and social distancing measures, various sectors faced unprecedented challenges, leading to widespread economic uncertainty. This situation prompted a closer look at key economic indicators, helping us understand the nuances of recovery. In this analysis, we will explore the data that illustrates how economic resilience began to unfold, highlighting the stories behind the numbers and the varying impacts experienced across different regions and industries.
+        </p>
+        
+        <!-- Chart with disappearing caption for S&P 500 -->
+        <figure>
+            <img src="images/s-and-p-chart.png" alt="S&P 500 Chart">
+            <figcaption>The S&P 500 in 2020 - A rollercoaster of investor confidence.</figcaption>
+        </figure>
+        <p>
+            The chart above tracks the S&P 500 performance throughout 2020. Initially, the index followed a rising trend, driven by economic growth before the pandemic. However, as COVID-19 spread, the markets plummeted in May, signaling a loss of investor confidence. The recovery afterward, fueled by government stimulus and optimism over reopening, was one of the fastest in market history, demonstrating the stock market’s resilience, even as the broader economy lagged behind. According to research by Goldman Sachs, stock markets tend to recover quicker than the labor market and real economy during crises.
         </p>
 
-    <!-- S&P 500 Chart -->
-    <section>
-        <img src="images/s+pchart.png" alt="S&P 500 Stock Index">
-        <div class="caption">S&P 500 Stock Index (2014 - 2023)</div>
+        <!-- Chart with disappearing caption for Unemployment Rates -->
+        <figure class="long-chart">
+            <img src="images/unemployment-chart.png" alt="Unemployment Rates Chart">
+            <figcaption>Unemployment in states heavily reliant on tourism and services.</figcaption>
+        </figure>
         <p>
-            The S&P 500 chart is a reflection of the U.S. stock market’s performance, which serves as a barometer of overall economic health. The gradual rise until early 2020 showcases years of steady growth. However, the sharp decline in March 2020 indicates the economic shock caused by the COVID-19 pandemic. What followed was a sharp recovery, driven by government stimulus and investor confidence. This chart shows that despite setbacks, the market bounced back swiftly, suggesting a resilient economy.
+            This chart highlights the unemployment rates by state during May 2020. Nevada, with its reliance on tourism, was hit hardest, followed by Hawaii, Michigan, New York, and California. Industries dependent on human interaction, such as hospitality and leisure, saw the most significant job losses. According to the Bureau of Labor Statistics, unemployment surged to historic levels, with some sectors like hospitality losing over 50% of their workforce.
         </p>
-        <p class="source">Source: <a href="https://www.investopedia.com/terms/s/sp500.asp" target="_blank">Investopedia</a></p>
+
+        <!-- Chart with disappearing caption for Labor Participation and Unemployment -->
+        <figure>
+            <img src="images/unemployment-participation-chart.png" alt="Unemployment and Participation Chart">
+            <figcaption>The crossover of participation and unemployment rates.</figcaption>
+        </figure>
+        <p>
+            The final chart presents labor force participation and unemployment trends during 2020. Labor force participation dropped sharply in April 2020, as millions of workers either lost their jobs or left the workforce. By August, unemployment started to fall as participation rebounded—this crossover marked the early stages of recovery. According to a report by McKinsey & Company, labor market disruptions were concentrated in low-wage sectors, whereas higher-wage jobs recovered more swiftly.
+        </p>
+
+        <p><strong>Key Takeaway:</strong> These charts reveal how different sectors and states experienced the economic shock differently and at different rates, with some rebounding faster than others.</p>
     </section>
 
-    <!-- Unemployment Rate by State Chart -->
-    <section>
-        <img src="images/unemployment.png" alt="Unemployment Rate by State in May 2020">
-        <div class="caption">Unemployment Rate by State in May 2020</div>
-        <p>
-            This chart highlights the unemployment rate across U.S. states in May 2020, a peak period of job losses due to the COVID-19 pandemic. States like Nevada, Hawaii, and Michigan, which rely on industries such as tourism and manufacturing, saw the highest unemployment rates. The data helps to illustrate how different regions were affected disproportionately by the economic fallout, with Nevada topping the list at over 20% unemployment.
-        </p>
-        <p class="source">Source: <a href="https://www.bls.gov/" target="_blank">U.S. Bureau of Labor Statistics</a></p>
-    </section>
-
-    <!-- New York Unemployment vs. Labor Participation -->
-    <section>
-        <img src="images/NYchart.png" alt="Unemployment vs. Labor Participation in New York (2020)">
-        <div class="caption">Unemployment vs. Labor Participation in New York (2020)</div>
-        <p>
-            In this chart, we see the relationship between unemployment and labor force participation in New York. As unemployment spiked in April 2020, labor force participation also took a dip, reflecting the significant loss of jobs and the reduction in available workforce. However, as unemployment gradually declined through the rest of 2020, participation rates steadily increased. This crossover indicates economic recovery, as more people returned to work, although full recovery was still in progress by late 2020.
-        </p>
-        <p class="source">Source: <a href="https://www.bls.gov/" target="_blank">U.S. Bureau of Labor Statistics</a></p>
-    </section>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </footer>
 
 </body>
 </html>
