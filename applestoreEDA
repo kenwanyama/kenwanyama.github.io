@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory Data Analysis of Apple Store Apps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .chart {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .chart img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exploring the Apple Store: Insights Through Data Analysis</h1>
+        
+        <p>In this project, I performed an exploratory data analysis (EDA) on Apple Store data to uncover trends and insights about apps, genres, ratings, and prices. By investigating this dataset, I aimed to reveal patterns that can help understand the dynamics of the App Store and what factors contribute to app success.</p>
+        
+        <h2>Unique Apps and Missing Values</h2>
+        <p>To start, I checked how many unique apps are in the dataset and looked for any missing values. Ensuring the dataset's integrity is a crucial first step in any analysis, as missing or duplicate data can distort the results.</p>
+
+        <h2>Apps Per Genre: What's Popular?</h2>
+        <p>One of the most interesting aspects of app data is understanding which genres are the most popular. By grouping apps by their genre, I identified which categories dominate the App Store.</p>
+        <div class="chart">
+            <h3>Chart: Number of Apps per Genre</h3>
+            <img src="genre_chart.png" alt="Bar chart showing the number of apps in each genre">
+        </div>
+
+        <h2>Ratings Overview: What Do Users Like?</h2>
+        <p>Understanding user ratings can give a direct indication of app quality and popularity. By looking at the minimum, maximum, and average ratings, I could get a sense of the overall distribution of ratings in the store.</p>
+
+        <h2>App Pricing: Free vs. Paid</h2>
+        <p>Pricing is another key factor in an app's success. I categorized apps into "Paid" and "Free" groups to see how they differ in terms of user ratings.</p>
+        <div class="chart">
+            <h3>Chart: Free vs Paid Apps Rating Comparison</h3>
+            <img src="paid_vs_free.png" alt="Comparison chart of ratings for free vs. paid apps">
+        </div>
+
+        <h2>Language Support and User Satisfaction</h2>
+        <p>Does offering an app in more languages lead to higher user satisfaction? I grouped apps by the number of languages they support and calculated their average ratings. This revealed whether language availability has a significant effect on ratings.</p>
+        <div class="chart">
+            <h3>Chart: Ratings by Language Support</h3>
+            <img src="language_support.png" alt="Bar chart showing correlation between language support and ratings">
+        </div>
+
+        <h2>App Descriptions and User Ratings</h2>
+        <p>Is there a relationship between the length of an app’s description and its rating? Longer descriptions might provide more information, potentially resulting in higher ratings. I explored this by analyzing description length and its correlation with user satisfaction.</p>
+        <div class="chart">
+            <h3>Chart: Ratings by Description Length</h3>
+            <img src="description_length.png" alt="Chart showing the relationship between description length and ratings">
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>Through these analyses, I’ve uncovered a variety of insights about what makes apps successful on the Apple Store. Understanding these factors can help developers optimize their apps to attract more users and improve user satisfaction.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kennedy Wanyama</p>
+    </footer>
+
+</body>
+</html>
