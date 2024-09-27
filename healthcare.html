@@ -42,13 +42,14 @@
         .tableauEmbed {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            padding: 10px; /* Added padding for margin space */
+            margin: 20px 0; /* Added margin above and below the dashboard */
         }
 
         .tableauPlaceholder {
             max-width: 100%; /* Ensures the tableau fits within the container */
             overflow: hidden; /* Prevents overflow */
+            width: 1000px; /* Fixed width for the dashboard */
+            margin: 0 auto; /* Center the dashboard */
         }
 
         footer {
@@ -103,10 +104,10 @@
                 var divElement = document.getElementById('viz1727439448132');                    
                 var vizElement = divElement.getElementsByTagName('object')[0];                    
                 if (divElement.offsetWidth > 800) {
-                    vizElement.style.width = '1366px';
+                    vizElement.style.width = '1000px'; // Fixed width
                     vizElement.style.height = '795px';
                 } else if (divElement.offsetWidth > 500) {
-                    vizElement.style.width = '1366px';
+                    vizElement.style.width = '1000px'; // Fixed width
                     vizElement.style.height = '795px';
                 } else {
                     vizElement.style.width = '100%';
