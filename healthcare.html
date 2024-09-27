@@ -40,8 +40,15 @@
         }
 
         .tableauEmbed {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
+            padding: 10px; /* Added padding for margin space */
+        }
+
+        .tableauPlaceholder {
+            max-width: 100%; /* Ensures the tableau fits within the container */
+            overflow: hidden; /* Prevents overflow */
         }
 
         footer {
