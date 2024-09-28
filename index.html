@@ -18,10 +18,25 @@
             padding: 20px;
             text-align: center;
             color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header h1 {
             margin: 0;
+            flex-grow: 1;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .content {
@@ -63,6 +78,11 @@
 <body>
 
     <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="resume.html">Resume</a>
+        </nav>
         <h1>Kennedy Wanyama</h1>
     </header>
 
