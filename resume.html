@@ -4,52 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kennedy Wanyama - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #282c34;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: #333;
+            margin-top: 5px;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .contacts a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .job-location, .job-dates {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .dark-section {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Kennedy Wanyama</h1>
-        <p>United States | <a href="mailto:kenwanyama.email@gmail.com">kenwanyama.email@gmail.com</a> | <a href="https://www.linkedin.com/in/kennedywanyama">LinkedIn</a> | <a href="https://kenwanyama.github.io">Portfolio</a></p>
     </header>
 
-    <section id="summary">
+    <section class="dark-section">
+        <div class="contacts">
+            <span>United States</span>
+            <span>Email: <a href="mailto:kenwanyama.email@gmail.com">kenwanyama.email@gmail.com</a></span>
+            <span><a href="https://www.linkedin.com/in/kennedywanyama/" target="_blank">LinkedIn</a></span>
+            <span><a href="https://kenwanyama.github.io/" target="_blank">GitHub</a></span>
+        </div>
+    </section>
+
+    <section class="dark-section">
         <h2>Summary</h2>
         <p>Versatile professional with a background in international diplomacy and expertise in data analysis and programming. Experienced in policy discussions and research. Demonstrates strong interpersonal skills and a commitment to social, humanitarian, and cultural advocacy, supported by a solid foundation in biology. Proven ability to foster partnerships and excel in high-pressure environments, dedicated to making a positive impact.</p>
     </section>
 
-    <section id="experience">
+    <section class="dark-section">
         <h2>Experience</h2>
-        <h3>Technical Advisor</h3>
-        <p><strong>Kenya Mission to the United Nations</strong></p>
-        <ul>
-            <li>Conducted thorough research on social development topics such as education, youth, aging, and the advancement of women to inform the Mission’s positions and strategies.</li>
-            <li>Drafted detailed correspondence, briefing notes, and reports on Third Committee topics, synthesizing complex information into clear and concise documents.</li>
-            <li>Attended formal sessions and high-level meetings, providing comprehensive notes and timely summaries to support decision-making processes.</li>
-            <li>Coordinated effectively with fellow interns and staff to facilitate information exchange and alignment with group positions and strategic goals.</li>
-            <li>Managed diplomatic engagements and ensured the smooth facilitation of official events, including high-level meetings involving heads of state and government.</li>
-        </ul>
+        <div class="job">
+            <div class="job-title">Technical Advisor</div>
+            <div class="job-location">Kenya Mission to the United Nations</div>
+            <div class="job-dates">June 2024 - September 2024</div>
+            <ul>
+                <li>Conducted thorough research on social development topics such as education, youth, aging, and the advancement of women to inform the Mission’s positions and strategies.</li>
+                <li>Drafted detailed correspondence, briefing notes, and reports on Third Committee topics, synthesizing complex information into clear and concise documents.</li>
+                <li>Attended formal sessions and high-level meetings, providing comprehensive notes and timely summaries to support decision-making processes.</li>
+                <li>Coordinated effectively with fellow interns and staff to facilitate information exchange and alignment with group positions and strategic goals.</li>
+                <li>Managed diplomatic engagements and ensured the smooth facilitation of official events, including high-level meetings involving heads of state and government.</li>
+            </ul>
+        </div>
 
-        <h3>Protocol Officer – UNGA 79 Volunteer</h3>
-        <p><strong>United Nations</strong></p>
-        <ul>
-            <li>Coordinated and facilitated diplomatic engagements, including high-level meetings and official events involving heads of state and government.</li>
-            <li>Assisted with the accreditation process for member state representatives, managing credentials for UN meetings and events.</li>
-            <li>Conducted administrative tasks, including managing correspondence, scheduling, and maintaining records for protocol-related matters.</li>
-            <li>Assisted in organizing official ceremonies, ensuring proper seating and protocol.</li>
-        </ul>
+        <div class="job">
+            <div class="job-title">Protocol Officer – UNGA 79 Volunteer</div>
+            <div class="job-location">United Nations</div>
+            <div class="job-dates">September 2024 - October 2024</div>
+            <ul>
+                <li>Coordinated and facilitated diplomatic engagements, including high-level meetings and official events involving heads of state and government.</li>
+                <li>Assisted with the accreditation process for member state representatives, managing credentials for UN meetings and events.</li>
+                <li>Conducted administrative tasks, including managing correspondence, scheduling, and maintaining records for protocol-related matters.</li>
+                <li>Assisted in organizing official ceremonies, ensuring proper seating and protocol.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Caterer</div>
+            <div class="job-location">Exquisite Staffing</div>
+            <div class="job-dates">August 2021 - Present</div>
+            <ul>
+                <li>Served guests efficiently at events, ensuring high-quality customer service and a seamless dining experience.</li>
+                <li>Assisted in food preparation and kitchen tasks, adhering to hygiene and safety standards.</li>
+                <li>Engaged with guests, addressing special requests and dietary needs to enhance their experience.</li>
+                <li>Prepared and garnished drinks as a bartender, maintaining accuracy and speed in high-volume settings.</li>
+                <li>Collaborated with team members to provide smooth and professional catering service for various events.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="education">
+    <section class="dark-section">
         <h2>Education</h2>
-        <p><strong>Masters of Science in Information Technology: Software Design and Programming</strong><br>
-        University of Denver, Denver, CO · 2026</p>
-        <p><strong>Bachelors of Science in Biology</strong><br>
-        City College of New York, New York, NY · 2024</p>
-        <p><strong>Associate in Science in Biotechnology</strong><br>
-        Queensborough Community College, New York, NY · 2022</p>
+        <div class="education">
+            <p><strong>Masters of Science in Information Technology: Software Design and Programming</strong><br>
+            University of Denver, Denver, CO · 2026</p>
+            <p><strong>Bachelors of Science in Biology</strong><br>
+            City College of New York, New York, NY · 2024</p>
+            <p><strong>Associate in Science in Biotechnology</strong><br>
+            Queensborough Community College, New York, NY · 2022</p>
+        </div>
     </section>
 
-    <section id="skills">
+    <section class="dark-section">
         <h2>Skills</h2>
         <ul>
             <li>Data Analysis</li>
@@ -58,5 +184,6 @@
             <li>Tableau</li>
         </ul>
     </section>
+
 </body>
 </html>
