@@ -17,7 +17,7 @@
             text-align: center;
             padding: 40px;
             background-color: #282c34;
-            color: white;
+            color: #ffcc00;
         }
 
         section {
@@ -31,23 +31,16 @@
 
         h1 {
             margin-top: 0;
-            font-size: 32px;
-            color: #333;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffcc00;
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 22px;
+            font-weight: bold;
             margin-bottom: 10px;
-            color: #333;
-        }
-
-        h2::after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 2px;
-            background-color: #333;
-            margin-top: 5px;
+            color: #222;
         }
 
         .contacts {
@@ -65,18 +58,10 @@
             text-decoration: underline;
         }
 
-        .section-title {
+        .job-title, .education-title {
+            font-weight: bold;
             font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 18px;
-            color: #333;
+            color: #222;
         }
 
         .job-location, .job-dates {
@@ -86,13 +71,8 @@
         }
 
         ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
+            list-style: disc;
+            padding-left: 20px;
         }
 
         .dark-section {
@@ -100,10 +80,33 @@
             padding: 15px;
             border-radius: 8px;
         }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: white;
+        }
+
+        footer nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Kennedy Wanyama</h1>
     </header>
@@ -123,10 +126,19 @@
     </section>
 
     <section class="dark-section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Science (M.S.): Information Technology - Software Design and Programming</strong><br>University of Denver, Denver, CO | 2026</li>
+            <li><strong>Bachelor of Science (B.S.): Biology</strong><br>City College of New York, New York | 2024</li>
+            <li><strong>Associate in Science (A.S.): Biotechnology</strong><br>Queensborough Community College, New York | 2022</li>
+        </ul>
+    </section>
+
+    <section class="dark-section">
         <h2>Experience</h2>
         <div class="job">
             <div class="job-title">Technical Advisor</div>
-            <div class="job-location">Kenya Mission to the United Nations</div>
+            <div class="job-location">Kenya Mission to the United Nations | New York, NY</div>
             <div class="job-dates">June 2024 - September 2024</div>
             <ul>
                 <li>Conducted thorough research on social development topics such as education, youth, aging, and the advancement of women to inform the Mission’s positions and strategies.</li>
@@ -139,7 +151,7 @@
 
         <div class="job">
             <div class="job-title">Protocol Officer – UNGA 79 Volunteer</div>
-            <div class="job-location">United Nations</div>
+            <div class="job-location">United Nations | New York, NY</div>
             <div class="job-dates">September 2024 - October 2024</div>
             <ul>
                 <li>Coordinated and facilitated diplomatic engagements, including high-level meetings and official events involving heads of state and government.</li>
@@ -151,7 +163,7 @@
 
         <div class="job">
             <div class="job-title">Caterer</div>
-            <div class="job-location">Exquisite Staffing</div>
+            <div class="job-location">Exquisite Staffing | New York, NY</div>
             <div class="job-dates">August 2021 - Present</div>
             <ul>
                 <li>Served guests efficiently at events, ensuring high-quality customer service and a seamless dining experience.</li>
@@ -164,26 +176,21 @@
     </section>
 
     <section class="dark-section">
-        <h2>Education</h2>
-        <div class="education">
-            <p><strong>Masters of Science in Information Technology: Software Design and Programming</strong><br>
-            University of Denver, Denver, CO · 2026</p>
-            <p><strong>Bachelors of Science in Biology</strong><br>
-            City College of New York, New York, NY · 2024</p>
-            <p><strong>Associate in Science in Biotechnology</strong><br>
-            Queensborough Community College, New York, NY · 2022</p>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Data Analysis</span>
+            <span>SQL</span>
+            <span>Python</span>
+            <span>Tableau</span>
         </div>
     </section>
 
-    <section class="dark-section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Data Analysis</li>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>Tableau</li>
-        </ul>
-    </section>
-
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </footer>
 </body>
 </html>
